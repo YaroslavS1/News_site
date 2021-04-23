@@ -14,7 +14,7 @@ def index(request):
     # return(HttpResponse(res))
     return render(request, 'news/index.html', {'news': news, 'title': 'Список новостей'})
 
-
+ 
 def test(request):
     news1 = News.objects.filter(title='Новость 1')
     res = [i.title for i in news1]
